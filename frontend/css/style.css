@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #2E8B57;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.recipes-container div {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2E8B57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+header, footer {
+    border-bottom: 5px solid #3CB371;
+}
+
+.recipes-container div:hover {
+    background-color: #3CB371;
+    border-color: #2E8B57;
+}
+
+h2 {
+    color: #2E8B57;
+}
+
+a:hover {
+    color: #3CB371;
+}
+
+/* Login Form Styles */
+#login-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}
+
+#login-section h2 {
+    text-align: center;
+    color: #2E8B57;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2E8B57;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #3CB371;
+}
+
+#login-section p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#login-section a {
+    color: #2E8B57;
+    text-decoration: none;
+}
+
+#login-section a:hover {
+    color:#3CB371;
+}
