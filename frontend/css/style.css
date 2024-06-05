@@ -213,7 +213,7 @@ a:hover {
     color: #3CB371; 
 }
 
-/* Existing styles remain the same */
+
 
 /* Recipes page styles */
 #recipes-section {
@@ -227,7 +227,7 @@ a:hover {
 
 #recipes-section h2 {
     text-align: center;
-    color: #2E8B57; /* Green color */
+    color: #2E8B57; 
     margin-bottom: 2rem;
 }
 
@@ -251,12 +251,14 @@ a:hover {
 
 .recipe-item img {
     width: 100%;
-    max-width: 300px; /* Increase the maximum width */
+    max-width: 300px; 
+    width */
     height: auto;
-    max-height: 200px; /* Increase the maximum height */
-    object-fit: cover; /* Ensure the images cover the specified height without distortion */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure margin works as expected */
+    max-height: 200px; 
+    height */
+    object-fit: cover; 
+    margin: 0 auto; 
+    display: block; 
 }
 
 .recipe-item h3 {
@@ -273,14 +275,53 @@ a:hover {
     display: block;
     text-align: center;
     padding: 0.75rem;
-    background: #2E8B57; /* Green color */
+    background: #2E8B57; 
     color: #fff;
     text-decoration: none;
     border-radius: 0 0 10px 10px;
 }
 
 .view-recipe:hover {
-    background: #3CB371; /* Lighter green on hover */
+    background: #3CB371; 
 }
 
+/* Recipe Details page styles */
+#recipe-details-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.recipe-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recipe-header img {
+    width: 100%;
+    max-width: 1000;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.recipe-header h2 {
+    color: #2E8B57;
+}
+
+.recipe-body h3 {
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+.recipe-body ul,
+.recipe-body ol {
+    margin-left: 1.5rem;
+}
+
+.recipe-body p {
+    color: #666;
+}
