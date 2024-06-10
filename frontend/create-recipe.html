@@ -7,53 +7,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-    <h1>Recipe Sharing Platform</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">register</a></li>
-        </ul>
-    </nav>
-   </header> 
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>Recipe Sharing Platform</h1>
+            </div>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-bar" placeholder="Search recipes...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="auth-links">
+                <a href="login.html">Login</a> | <a href="register.html">Register</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <main>
-    <section id="create-recipe-section">
-        <h2>Create/Edit Recipe</h2>
-        <form id="create-recipe-form">
-            <div class="form-group">
-                <label for="title">Recipe Title</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <textarea id="description" name="descriptions" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="ingredients">Ingredients (separated by commas)</label>
-                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="Steps">Steps (separated by commas)</label>
-                <textarea id="steps" name="steps" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="image">Recipe image</label>
-                <input type="file" id="image" name="image" accept="image/*">
-            </div>
-            <div class="form-group">
-                <button type="submit">Save Recipe</button>
-            </div>
-        </form>
-    </section>
-   </main>
+    <main>
+        <section id="create-edit-recipe">
+            <h2>Create/Edit Recipe</h2>
+            <form id="recipeForm" action="/submit-recipe" method="POST">
+                <div class="form-group">
+                    <label for="title">Recipe Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Short Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL:</label>
+                    <input type="url" id="image" name="image" required>
+                </div>
+                <div class="form-group">
+                    <label for="prep-time">Preparation Time:</label>
+                    <input type="text" id="prep-time" name="prep_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="servings">Servings:</label>
+                    <input type="number" id="servings" name="servings" required>
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="directions">Directions:</label>
+                    <textarea id="directions" name="directions" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Recipe</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-   <footer>
+    <footer>
         <p>&copy; 2024 Recipe Sharing Platform</p>
-   </footer>
+    </footer>
 
-   <script src="js/create-recipe.js"></script>
+    <script src="js/create-edit-recipe.js"></script>
 </body>
 </html>

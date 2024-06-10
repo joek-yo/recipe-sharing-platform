@@ -56,9 +56,76 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe9.jpg',
             link: 'recipe.html'   
+        },
+        {
+            title: 'Recipe Title 10',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe10.jpg',
+            link: 'recipe2.html'
+        },
+        {
+            title: 'Recipe Title 11',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe11.jpg',
+            link: 'recipe3.html'   
+        },
+        {
+            title: 'Recipe Title 12',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe12.jpg',
+            link: 'recipe4.html'
+        },
+        {
+            title: 'Recipe Title 13',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe13.jpg',
+            link: 'recipe5.html'
+        },
+        {
+            title: 'Recipe Title 14',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe14.jpg',
+            link: 'recipe6.html'   
+        },
+        {
+            title: 'Recipe Title 15',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe15.jpg',
+            link: 'recipe7.html'
+        },
+        {
+            title: 'Recipe Title 16',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe16.jpg',
+            link: 'recipe.html'
+        },
+        {
+            title: 'Recipe Title 17',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe17.jpg',
+            link: 'recipe.html'   
+        },
+        {
+            title: 'Recipe Title 18',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe18.jpg',
+            link: 'recipe7.html'
+        },
+        {
+            title: 'Recipe Title 19',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe19.jpg',
+            link: 'recipe.html'
+        },
+        {
+            title: 'Recipe Title 20',
+            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+            image: 'images/recipe20.jpg',
+            link: 'recipe.html'   
         }
+        
+        
 
-        // Add more recipes as needed
     ];
 
     // Function to create a recipe item

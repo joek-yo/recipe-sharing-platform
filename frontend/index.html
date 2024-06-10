@@ -8,13 +8,24 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Recipe Sharing Platform</h1>
+        <div class="container">
+            <div class="branding">
+                <h1>Recipe Sharing Platform</h1>
+            </div>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-bar" placeholder="Search recipes...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="auth-links">
+                <a href="login.html">Login</a> | <a href="register.html">Register</a>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +34,7 @@
         <section id="featured-recipes">
             <h2>Featured Recipes</h2>
             <div class="recipes-container">
-                <!-- Featured recipes will be dynamically load here -->
+                <!-- Featured recipes will be dynamically loaded here -->
             </div>
         </section>
 
