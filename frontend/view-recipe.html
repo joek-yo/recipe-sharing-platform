@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recipe - Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-top">
+            <div class="branding">
+                <h1>Recipe Sharing Platform</h1>
+            </div>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-bar" placeholder="Search recipes...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="auth-links">
+                <a href="login.html">Login</a> | <a href="register.html">Register</a>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <header>
+                <h1 id="recipe-title">Recipe Title</h1>
+                <p id="recipe-description">A short description of the recipe.</p>
+            </header>
+
+            <section class="image-section">
+                <img id="recipe-image" src="image.jpg" alt="Recipe Image">
+                <p id="recipe-info">Prep Time: 0 mins | Total Time: 0 mins | Servings: 0</p>
+                <a href="create-recipe.html" class="create-edit-btn">Create/Edit Recipe</a>
+            </section>
+
+            <section class="rating">
+                <h2>Rating</h2>
+                <div class="stars" id="recipe-rating">
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                </div>
+                <p id="rating-value">0.0 out of 5 stars</p>
+            </section>
+
+            <section class="ingredients">
+                <h2>Ingredients</h2>
+                <ul id="recipe-ingredients">
+                    <!-- Ingredients will be inserted here -->
+                </ul>
+            </section>
+
+            <section class="directions">
+                <h2>Directions</h2>
+                <ol id="recipe-directions">
+                    <!-- Directions will be inserted here -->
+                </ol>
+            </section>
+
+            <section class="comments">
+                <h2>Comments</h2>
+                <div id="comments-container">
+                    <!-- Comments will be inserted here -->
+                </div>
+                <form id="comment-form">
+                    <textarea id="comment-text" placeholder="Add a comment"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section class="related-recipes">
+                <h2>You May Also Love</h2>
+                <ul id="related-recipes">
+                    <!-- Related recipes will be inserted here -->
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Sharing Platform</p>
+    </footer>
+
+    <script src="js/view-recipe.js"></script>
+</body>
+</html>
