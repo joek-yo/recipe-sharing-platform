@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const registerForm = document.getElementById('registerForm');
+    const registerForm = document.querySelector('form');
 
     registerForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        const username = document.getElementById('username').value;
+        const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirm-password').value;
 
-        if (validateForm(username, email, password, confirmPassword)) {
-            
+        if (validateForm(name, email, password, confirmPassword)) {
             console.log('Form submitted');
+            // Perform form submission here
             registerForm.submit();
         }
     });
 
-    function validateForm(username, email, password, confirmPassword) {
-        if (!validateUsername(username)) {
-            alert('Username must be at least 3 characters long.');
+    function validateForm(name, email, password, confirmPassword) {
+        if (!validateName(name)) {
+            alert('Name must not be empty.');
             return false;
         }
         if (!validateEmail(email)) {
@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    function validateUsername(username) {
-        return username.length >= 3;
+    function validateName(name) {
+        return name.trim() !== '';
     }
 
     function validateEmail(email) {
-        const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
     }
 

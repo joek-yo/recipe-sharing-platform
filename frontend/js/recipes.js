@@ -3,125 +3,107 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample data - in a real application, this would be fetched from a database
     const recipes = [
-        {
-            title: 'Recipe Title 1',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
-            image: 'images/recipe1.jpg',
-            link: 'recipe1.html'
-        },
-        {
-            title: 'Recipe Title 2',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
-            image: 'images/recipe2.jpg',
-            link: 'recipe2.html'
-        },
-        {
-            title: 'Recipe Title 3',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
-            image: 'images/recipe3.jpg',
-            link: 'recipe3.html'   
-        },
-        {
-            title: 'Recipe Title 4',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
+         {
             image: 'images/recipe4.jpg',
+            title: 'Vegetable Stir Fry',
+            description: 'Colorful bell peppers, broccoli, and carrots stir-fried with garlic and ginger, then tossed in a savory soy sauce, perfect for a quick and healthy dinner.',
             link: 'recipe4.html'
         },
         {
-            title: 'Recipe Title 5',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe5.jpg',
+            title: 'Margherita Pizza',
+            description: 'A classic Italian pizza topped with tangy tomato sauce, fresh mozzarella cheese, and aromatic basil leaves, drizzled with olive oil and baked to perfection.',
             link: 'recipe5.html'
         },
         {
-            title: 'Recipe Title 6',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe6.jpg',
-            link: 'recipe6.html'   
+            title: 'Caesar Salad',
+            description: 'A refreshing salad made with crisp romaine lettuce, homemade croutons, Parmesan cheese, and a creamy Caesar dressing.',
+            link: 'recipe6.html'
         },
         {
-            title: 'Recipe Title 7',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe7.jpg',
+            title: 'French Toast',
+            description: 'Slices of bread dipped in an egg mixture with milk and cinnamon, cooked on a griddle until golden brown, and served with maple syrup.',
             link: 'recipe7.html'
         },
         {
-            title: 'Recipe Title 8',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe8.jpg',
-            link: 'recipe.html'
+            title: 'Chicken Curry',
+            description: 'Tender chicken cooked with onions, garlic, and ginger, seasoned with curry powder and simmered in coconut milk for a flavorful and comforting dish.',
+            link: 'recipe8.html'
         },
         {
-            title: 'Recipe Title 9',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe9.jpg',
-            link: 'recipe.html'   
+            title: 'Blueberry Muffins',
+            description: 'Moist and fluffy muffins packed with juicy blueberries, perfect for a quick and delicious breakfast or snack.',
+            link: 'recipe9.html'
         },
         {
-            title: 'Recipe Title 10',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe10.jpg',
-            link: 'recipe2.html'
+            title: 'Grilled Salmon',
+            description: 'Salmon fillets seasoned with olive oil, lemon, dill, salt, and pepper, grilled to perfection for a healthy and flavorful meal.',
+            link: 'recipe10.html'
         },
         {
-            title: 'Recipe Title 11',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe11.jpg',
-            link: 'recipe3.html'   
+            title: 'Avocado Toast',
+            description: 'Toasted bread topped with mashed avocado, lemon juice, salt, and pepper, finished with a sprinkle of red pepper flakes for a simple yet satisfying dish.',
+            link: 'recipe11.html'
         },
         {
-            title: 'Recipe Title 12',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe12.jpg',
-            link: 'recipe4.html'
+            title: 'Chocolate Chip Cookies',
+            description: 'Classic cookies made with a buttery dough, loaded with chocolate chips, and baked until golden brown and chewy.',
+            link: 'recipe12.html'
         },
         {
-            title: 'Recipe Title 13',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe13.jpg',
-            link: 'recipe5.html'
+            title: 'Stuffed Peppers',
+            description: 'Bell peppers stuffed with a savory mixture of ground beef, rice, tomato sauce, and cheese, baked until tender and delicious.',
+            link: 'recipe13.html'
         },
         {
-            title: 'Recipe Title 14',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe14.jpg',
-            link: 'recipe6.html'   
+            title: 'Greek Salad',
+            description: 'A refreshing salad made with cucumbers, tomatoes, red onion, feta cheese, and olives, tossed in olive oil and lemon juice.',
+            link: 'recipe14.html'
         },
         {
-            title: 'Recipe Title 15',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe15.jpg',
-            link: 'recipe7.html'
+            title: 'Pancakes',
+            description: 'Fluffy pancakes made with a batter of flour, milk, eggs, baking powder, and sugar, cooked until golden brown and served with butter and syrup.',
+            link: 'recipe15.html'
         },
         {
-            title: 'Recipe Title 16',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe16.jpg',
-            link: 'recipe.html'
+            title: 'Lasagna',
+            description: 'Layers of lasagna noodles, meat sauce, ricotta cheese, mozzarella cheese, and Parmesan cheese, baked until bubbly and golden brown.',
+            link: 'recipe16.html'
         },
         {
-            title: 'Recipe Title 17',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe17.jpg',
-            link: 'recipe.html'   
+            title: 'Quiche Lorraine',
+            description: 'A savory pie made with a buttery crust, filled with a mixture of eggs, heavy cream, bacon, Gruyère cheese, and nutmeg, baked until set and golden brown.',
+            link: 'recipe17.html'
         },
         {
-            title: 'Recipe Title 18',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe18.jpg',
-            link: 'recipe7.html'
+            title: 'Chocolate Cake',
+            description: 'A rich and moist chocolate cake made with cocoa powder, flour, sugar, eggs, butter, and baking powder, frosted as desired.',
+            link: 'recipe18.html'
         },
         {
-            title: 'Recipe Title 19',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe19.jpg',
-            link: 'recipe.html'
+            title: 'Beef Stew',
+            description: 'Tender beef chunks cooked with potatoes, carrots, onions, beef broth, and tomato paste, simmered until the flavors meld together into a hearty stew.',
+            link: 'recipe19.html'
         },
         {
-            title: 'Recipe Title 20',
-            description: 'Brief description of the recipe. This can be a short summary or a few key ingredients.',
             image: 'images/recipe20.jpg',
-            link: 'recipe.html'   
+            title: 'Fish Tacos',
+            description: 'Soft tortillas filled with cooked fish, cabbage, lime juice, cilantro, and sour cream, creating a delicious and satisfying meal with a refreshing twist.',
+            link: 'recipe20.html'
         }
         
         
