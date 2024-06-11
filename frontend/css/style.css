@@ -404,6 +404,7 @@ textarea {
 button[type="submit"] {
     padding: 0.5rem 1rem;
     background-color: #3CB371;
+<<<<<<< HEAD
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -524,11 +525,15 @@ ul, ol {
     padding: 0.5rem 1rem;
     background-color: #3CB371;
     color: #fff;
+=======
+>>>>>>> 4ac890684e9825d306a5df92bc3d7bb63f39ed64
     border: none;
     border-radius: 5px;
+    color: #fff;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 #comment-form button:hover {
     background-color: #2E8B57;
 }
@@ -576,4 +581,56 @@ footer {
     #comment-form button {
         font-size: 0.9rem;
     }
+=======
+button[type="submit"]:hover {
+    background-color: #2E8B57;
+}
+
+/* Ingredients, directions, comments, and related recipes sections */
+.ingredients, .directions, .comments, .related-recipes {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+ol li {
+    padding: 5px 0;
+}
+
+.comments .comment {
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.comments .comment p {
+    margin: 0;
+}
+
+.related-recipes ul li {
+    padding: 5px 0;
+}
+
+.related-recipes ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s;
+}
+
+.related-recipes ul li a:hover {
+    color: #005bb5;
+>>>>>>> 4ac890684e9825d306a5df92bc3d7bb63f39ed64
 }
